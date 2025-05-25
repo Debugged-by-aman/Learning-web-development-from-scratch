@@ -1,5 +1,4 @@
-<style>
-  .subscribe
+.subscribe
   {
     background-color: rgb(200, 0, 0);
     color: white;
@@ -184,75 +183,15 @@
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0);
   }
 
-  .count
-  {
-    background-color: green;
-    color:white;
-    padding-left: 18px;
-    padding-right: 18px;
-    padding-top: 6px;
-    padding-bottom: 6px;
-    margin-left: 20px;
-    margin-right: 20px;
-    border-style: none;
-  }
-  .count:hover
-  {
-    padding-left: 23px;
-    padding-right: 23px;
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-</style>
+  .count {
+  background-color: green;
+  color: white;
+  padding: 6px 18px;
+  margin: 0 20px;
+  border: none;
+  transition: transform 0.2s ease; 
+}
 
-<button class="download">
-  Download
-</button>
-
-<button class="Add">
-  Add to Cart
-</button>
-
-<button class="Sign">
-  Sign up
-</button>
-
-<button class="Get">
-  Get Started
-</button>
-
-<button class="request">
-  Request now
-</button>
-
-<button class="subscribe">
-  SUBSCRIBE
-</button>
-
-<button class = "Join">
-  JOIN US
-</button>
-
-<button class = "t">
-  Tweet
-</button>
-
-<button class="Stretch">
-  Stretch
-</button>
-
-<button class="Shadow">
-  Shadow
-</button>
-
-<button class="count">
-  One
-</button>
-
-<button class="count">
-  Two
-</button>
-
-<button class="count">
-  Three
-</button>
+.count:hover {
+  transform: scaleX(1.2); 
+}
