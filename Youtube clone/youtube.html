@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>
+      Youtube Clone
+    </title>
+
+    <style>
+      .thumbnail{
+        display: block;
+        width: 200px;
+        height: 200px;
+        border-radius: 120px;
+        object-fit: cover;
+        object-position: middle;
+        margin-bottom: 50px;
+      }
+      .search-bar{
+        width: 150px;
+        padding-top: 10px;
+        padding-left: 8px;
+        padding-bottom: 10px;
+        padding-right: 8px;
+        border-radius: 6px;
+        border-style: solid;
+        border-color: rgb(168, 168, 168);
+
+      }
+      .search-bar2{
+        width: 400px;
+        padding-top: 10px;
+        padding-left: 8px;
+        padding-bottom: 10px;
+        padding-right: 8px;
+        border-radius: 40px;
+        border-style: none;
+        border-color: rgb(168, 168, 168);
+        margin-top: 30px;
+        box-shadow: 0px 0px 5px ;
+        margin-bottom: 30px;
+        margin-right: 300px;
+      }
+      .email{
+        font-family: arial;
+        font-size: 10px;
+        color: rgb(114, 114, 114);
+        margin-bottom: 5px;
+      }
+      .email-bar{
+        border-radius: 4px;
+        width: 240px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        border-style: solid;
+        border-width: 1px;
+        border-color: rgb(51, 51, 51);
+      }
+      .Agree{
+        display: block;
+        background-color: rgb(0, 140, 255);
+        color: white;
+        border-radius: 20px;
+        border-style: none;
+        padding-left: 85px;
+        padding-right: 85px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-top: 8px;
+        margin-bottom: 50px;
+        margin-right: 20px;
+      }
+      .img-tweet{
+        width: 40px;
+        height: 40px;
+        object-fit: cover;
+        object-position: middle;
+        border-radius: 200px;
+        vertical-align: middle;
+      }
+      .tweet-bar{
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-right: 50px;
+        padding-left: 5px;
+        border-style: none;
+        font-size: 14px;
+      }
+      .tweet-button{
+        background-color: rgb(0, 117, 172);
+        color: whitesmoke;
+        font-family: arial;
+        font-weight: bold;
+        font-size: 13px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 6px;
+        padding-bottom: 6px;
+        border-radius: 15px;
+        margin-bottom: 50px;
+        margin-right: 400px;
+
+      }
+      .name{
+        display: block;
+        margin-bottom: 8px;
+      }
+      .top-email{
+        display: block;
+        margin-bottom: 8px;
+      }
+      .thanks{
+        width: 200px;
+        display: inline-block;
+        vertical-align: middle;
+      }
+      .google{
+        width: 200px;
+        margin-left: 110px;
+        margin-top: 50px;
+      }
+      .first{
+        width: 100px;
+        padding-top: 8px;
+        padding-left: 10px;
+        padding-bottom: 8px;
+        border-radius: 5px;
+        border-style: solid;
+        border-width: 1px;
+        margin-bottom: 8px;
+        margin-right: 5px;
+      }
+      .b-email{
+        width: 225px;
+        display: block;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        border-radius: 5px;
+        border-style: solid;
+        border-width: 1px;
+        padding-left: 10px;
+        margin-bottom: 10px;
+      }
+      .signup{
+        background-color: rgb(0, 140, 255);
+        color: white;
+        border-style: none;
+        padding-left: 96px;
+        padding-right: 96px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        border-radius: 5px;
+        font-weight: bold;
+        margin-bottom: 50px;
+      }
+      .ride{
+        font-size: 30px;
+        font-family: arial;
+        margin-bottom: 20px;
+      }
+      .pickup{
+        display: block;
+        width: 300px;
+        margin-bottom: 6px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        background-color: rgb(221, 221, 221);
+        border-style: none;
+        border-radius: 5px;
+        margin-top: 0;
+      }
+      .request{
+        background-color: black;
+        color: white;
+        border-style: none;
+        padding-left: 16px;
+        padding-right: 16px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-top: 20px;
+        font-size: 12px;
+        margin-right: 10px;
+        margin-bottom: 50px;
+      }
+
+      .later{
+        background-color: rgb(221, 221, 221);
+        border-style: none;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 16px;
+        padding-right: 16px;
+        margin-bottom: 50px;
+      }
+      .div-practice{
+        border-width: 1px;
+        border-color: rgb(114, 114, 114);
+        border-style: ridge;
+        width: 300px;
+        padding-left: 10px;
+        padding-bottom: 15px;
+      }
+      .div2{
+        background-color: rgb(20, 20, 20);
+        width: 300px;
+      }
+      .install{
+        color: white;
+        font-family: arial;
+        font-weight: bold;
+        padding-left: 10px;
+        padding-top: 10px;
+        margin-bottom: 8px;
+      }
+      .music{
+        color: rgb(94, 93, 93);
+        font-size: 12px;
+        font-family: arial;
+        padding-left: 10px;
+        padding-bottom: 10px;
+        margin-top: 0;
+        width: 280px;
+      }
+      .div3{
+        box-shadow: 0px 0px 5px 0;
+        width: 200px;
+        padding-bottom: 20px;
+        display: inline-block;
+        margin-right: 10px;
+      }
+      .div-img{
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        margin-bottom: 8px;
+      }
+      .oliver{
+        font-family: arial;
+        font-weight: bold;
+        margin-top: 0;
+        margin-left: 10px;
+        margin-bottom: 0;
+      }
+      .friend{
+        font-family: arial;
+        font-size: 14px;
+        margin-left: 10px;
+        margin-top: 4px;
+        color: rgb(64, 64, 64);
+      }
+      .add-friend{
+        background-color: rgb(0, 68, 255);
+        color: white;
+        margin-left: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        border-style: none;
+        border-radius: 5px;
+      }
+      .search-google{
+        background-color: rgb(218, 217, 217);
+        font-family: arial;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        display: inline;
+        margin-left: 80px;
+        font-size: 14px;
+      }
+      .lucky{
+        background-color: rgb(218, 217, 217);
+        font-family: arial;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        display: inline;
+        margin-left: 10px;
+        font-size: 14px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <input class="name" type="text" placeholder="Name">
+    <input class="top-email" type="text" placeholder="email">
+    <p class="thanks">
+      Thanks for chatting with our customer support. Would you like to take our quick survey?
+    </p>
+    <button>
+      Yes
+    </button>
+    <button>
+      No
+    </button>
+    <img class="thumbnail" src="https://i.ytimg.com/vi/ugEZ15EKLB8/hq720.jpg?sqp=-…FIgRihyMA8=&rs=AOn4CLCo5DaBkk1Q_nr78opm_n9QFeDp8g" alt="">
+    <input class="search-bar" type="text" placeholder="Search">
+    
+    <div class="google-div">
+      <img class="google" src="google_logo.svg">
+      <input class="search-bar2" type="text" placeholder="Search Google or type a URL">
+      <p class="search-google">
+        Google Search
+      </p>
+      <p class="lucky">
+        I'm Feeling Lucky
+      </p>
+    </div>
+    <p class="email">
+      Email
+    </p>
+    <input class="email-bar" type="text" >
+    <p class="email">
+      By clicking Agree & Join, you agree to the Privacy Policy.
+    </p>
+    <button class="Agree">
+      Agree & Join
+    </button>
+
+    <img class="img-tweet" src="https://i.ytimg.com/vi/ugEZ15EKLB8/hq720.jpg?sqp=-…FIgRihyMA8=&rs=AOn4CLCo5DaBkk1Q_nr78opm_n9QFeDp8ghttps://i.ytimg.com/vi/ugEZ15EKLB8/hq720.jpg?sqp=-…FIgRihyMA8=&rs=AOn4CLCo5DaBkk1Q_nr78opm_n9QFeDp8g" alt="">
+    <input class="tweet-bar" type="text" placeholder="What's happening?">
+    <butto class="tweet-button">
+      Tweet
+    </butto>
+    <input class="first" type="text" placeholder="First Name">
+    <input class="first" type="text" placeholder="First Name">
+    <input class="b-email" type="text" placeholder="Email">
+    <button class="signup">
+      Sign Up
+    </button>
+    <p class="ride">
+      Request a ride now
+    </p>
+    <input class="pickup" type="text" placeholder="Enter pickup location">
+    <input class="pickup" type="text" placeholder="Enter destination">
+    <button class="request">
+      Request now
+    </button>
+    <button class="later">
+      Schedule for later
+    </button>
+
+    <div class="div-practice">
+      <p>
+        Satisfied with our service?
+      </p>
+      <button>
+        Yes
+      </button>
+      <button>
+        No
+      </button>
+    </div>
+    <div class="div2">
+      <p class="install">
+        Install Youtube Music
+      </p>
+      <p class="music">
+        Add Youtube Music to your desktop for quick and easy access
+      </p>
+    </div>
+    <div class="div3">
+      <img class="div-img" src="https://i.ytimg.com/vi/oWhFXIZZWuI/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLBFJlNdzyevbgItHc_E_lR8H4T30w">
+      <p class="oliver">
+        Oliver
+      </p>
+      <p class="friend">
+        2 mutual friends
+      </p>
+      <button class="add-friend">
+        Add Friend
+      </button>
+    </div>
+    <div class="div3">
+      <img class="div-img" src="https://i.ytimg.com/vi/oWhFXIZZWuI/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLBFJlNdzyevbgItHc_E_lR8H4T30w">
+      <p class="oliver">
+        Oliver
+      </p>
+      <p class="friend">
+        2 mutual friends
+      </p>
+      <button class="add-friend">
+        Add Friend
+      </button>
+    </div>
+    <div class="div3">
+      <img class="div-img" src="https://i.ytimg.com/vi/oWhFXIZZWuI/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLBFJlNdzyevbgItHc_E_lR8H4T30w">
+      <p class="oliver">
+        Oliver
+      </p>
+      <p class="friend">
+        2 mutual friends
+      </p>
+      <button class="add-friend">
+        Add Friend
+      </button>
+    </div>
+  </body>
+</html>
